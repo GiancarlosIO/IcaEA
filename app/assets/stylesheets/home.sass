@@ -1,7 +1,9 @@
 html, body
   padding: 0
   margin: 0
-  background: #CDEFF4
+  background: #EBE9E8
+  font-family: Roboto, arial
+
 .container-total
   width: 100%
   .menu-container
@@ -13,36 +15,104 @@ html, body
     flex-flow: row wrap
     align-items: space-around
     .large-padding
-      border-radius: 15px
-      box-shadow: 14px 14px 4px rgba(0,0,0,.5)
+      padding: 10px
+      border-radius: 7px
+      box-shadow: 4px 5px 4px rgba(0,0,0,.5)
+    .left
+      margin-left: 5px
     .item-menu
       text-align: center
       flex: 1 1 20%
       display: flex
       flex-flow: column wrap
-      justify-content: center
+      justify-content: space-between
+      align-items: center
+      .sub-item-menu
       .icon
         margin: 0
         padding: 0
+        height: 200px
+        width: 100%
+        line-height: 200px
+        a
+          text-decoration: none
+          color: black
+          display: block
+          transition: all 0.4s
         .fa
           margin: 0
-          font-size: 140px
-          padding: 10px
+          font-size: 100px
+          vertical-align: middle
+          padding: 0px 10px
+          margin-top: 30px
+          margin-bottom: 30px
+          transition: all 0.4s
       .item-container
         a
           text-decoration: none
           color: black
-          font-size: 30px
-
+          font-size: 20px
+          display: block
+          transition: all 0.6s
+      .content
+        height: 140px
+        vertical-align: middle
+        p
+          transition: all 0.5s
     .about
       background: #8DF069
       border: 2px solid #2F9F06
+      &:hover
+        background: #183F0A
+        a
+          color: #71FB32
+          font-size: 25px
+        .fa
+          font-size: 140px
+          color: white
+        p
+          color: white
+          font-size: 16px
     .cursos
       background: #3E9CE0
       border: 2px solid #065289
+      transition: all 0.4s
+      &:hover
+        background: #06314F
+        a
+          color: #39D4F2
+          font-size: 25px
+        .fa
+          font-size: 140px
+          color: white
+        p
+          color: white
+          font-size: 16px
     .test-vocacional
       background: #F06986
       border: 2px solid #980122
+      &:hover
+        background: #5E091B
+        a
+          color: #F9289E
+          font-size: 25px
+        .fa
+          font-size: 140px
+          color: white
+        p
+          color: white
+          font-size: 16px
     .examenes
       background: #F9D34C
       border: 2px solid #92750B
+      &:hover
+        background: #4C3D05
+        a
+          color: #CFF928
+          font-size: 25px
+        .fa
+          font-size: 140px
+          color: white
+        p
+          color: white
+          font-size: 16px
