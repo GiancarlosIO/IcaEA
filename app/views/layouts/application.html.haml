@@ -1,11 +1,32 @@
 !!!5
 %html
-%head
-  %title
-    IcaEnsenia
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
-  = csrf_meta_tags
-%body
+  %head
+    %title
+      IcaEnsenia
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .container-header
+      %header
+        %nav.row
+          .logo.col-xs-3
+            =image_tag("images/logo.png")
+          %ul#menu.col-xs-9.end-xs.row
+            =link_to home_index_path do
+              %li.col-xs
+                Inicio
+            =link_to home_index_path do
+              %li.col-xs
+                ¿Quienes Somos?
+            =link_to home_index_path do
+              %li.col-xs
+                Costos y Cursos
+            =link_to home_index_path do
+              %li.col-xs
+                Test Vocacional
+            =link_to home_index_path do
+              %li.col-xs
+                Simulacros y mas
 
 = yield
